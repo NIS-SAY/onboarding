@@ -1,0 +1,243 @@
+.Onboarding {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex; /* Set display to flex for layout */
+
+  }
+  
+
+  .import {
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-content: center;
+    display: flex; /* Set display to flex for vertical alignment */
+    flex-direction: row;
+    height: 70px;
+    background-color: #b6add0;
+
+  }
+  
+  
+
+  .import h2 {
+    width: 75%;
+
+    margin: 20px;
+  }
+
+
+
+
+
+
+
+
+  .category {
+    margin-bottom: 20px;
+  }
+  
+  .category h2 {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  .category-content {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+    display: flex; /* Set display to flex for vertical alignment */
+  flex-direction: column; /* Arrange form fields vertically */
+  }
+  .experience-block {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+    margin-bottom: 10px;
+    display: flex; /* Set display to flex for vertical alignment */
+  flex-direction: column; /* Arrange form fields vertically */
+  }
+
+
+
+
+  button {
+    margin-top: 20px;
+  }
+  
+  
+  .side-image {
+    height: 97vh; /* Full height of the viewport */
+    width: 25%; /* 25% of the viewport width */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 16px;
+    margin-right: 20px;
+    position: fixed; /* Fixed positioning */
+  top: 10px; /* Align to the top of the viewport */
+  left: 10px; /* Align to the left of the viewport */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+  }
+  
+  .linkenIn-import-data {
+    height: 20px; /* Full height of the viewport */
+    width: 80px; /* 25% of the viewport width */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    margin-right: 20px;
+  }
+
+
+  form {
+    margin-left: 28%; /* Leave space for the fixed image */
+
+    width: 72%; /* Occupy the remaining 75% of the viewport */
+  }
+
+  input{
+    margin-bottom: 10px; /* Add space between input fields */
+    height: 40px;
+    cursor: pointer;
+  }
+select{
+  cursor: pointer;
+
+}
+  .input-style {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+  }
+  
+  .input-style:focus {
+    border-color: #6B5AA1;
+    box-shadow: 0 0 0 0.2rem #6b5aa15c;
+  }
+
+  select{
+    margin-bottom: 10px; /* Add space between input fields */
+    height: 40px;
+    width: 100%;
+  }
+
+  .select-style {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+  }
+  
+  .select-style:focus {
+    border-color: #6B5AA1;
+    box-shadow: 0 0 0 0.2rem #6b5aa15c;
+  }
+
+
+  .experience-block {
+    position: relative;
+  }
+  
+  .remove-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    margin: 10px;
+  }
+
+  button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+
+
+  /* Add a new class for the selected state */
+.selected {
+  background-color: #725AC1;
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+/* Apply hover effect to the selected state */
+.selected:hover {
+  background-color: #725AC1;
+  box-shadow: inset 0 -100px 0 0 #725AC1;
+}
+
+
+
+
+
+
+
+.checkbox-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-wrapper .terms-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-wrapper .terms-label .label-text {
+  margin-left: 10px;
+}
+
+.checkbox-wrapper .checkbox-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.checkbox-wrapper .checkbox-box {
+  fill: rgba(207, 205, 205, 0.425);
+  stroke: #8c00ff;
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+
+.checkbox-wrapper .checkbox-tick {
+  stroke: #8c00ff;
+  stroke-dasharray: 172;
+  stroke-dashoffset: 172;
+  transition: stroke-dashoffset 0.6s ease-in;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-box,
+.checkbox-wrapper input[type="checkbox"]:checked + .terms-label .checkbox-tick {
+  stroke-dashoffset: 0;
+}
+
+/* 
+
+input[type="month"]::-webkit-calendar-picker-indicator {
+ 
+  
+  stroke: #6A59A0; 
+} */
